@@ -46,7 +46,6 @@
       const response = await fetch("http://localhost:3000/get-profile");
       console.log("response", response);
       const user = await response.json();
-      console.log(JSON.stringify(user));
 
       document.getElementById("name").textContent = user.name
         ? user.name
